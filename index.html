@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div>
+        <form action="index.html" style="display: flex">
+          <div class="age-container-all">
+            <div class="age-container">
+              <div class="age-title">Day</div>
+              <div class="age-box">
+                <input class="age-box-input" type="text" name="day" id="" />
+              </div>
+              <div class="age-message"></div>
+            </div>
+
+            <div class="age-container">
+              <div class="age-title">Month</div>
+              <div class="age-box">
+                <input class="age-box-input" type="text" name="month" id="" />
+              </div>
+              <div class="age-message"></div>
+            </div>
+
+            <div class="age-container">
+              <div class="age-title">Year</div>
+              <div class="age-box">
+                <input class="age-box-input" type="text" name="year" id="" />
+              </div>
+              <div class="age-message"></div>
+            </div>
+          </div>
+        </form>
+
+        <!-- <input type="submit" value="Submit" id="submit-button" /> -->
+        <div class="submit-button-container">
+          <hr/>
+          <div id="submit-button">
+            <img src="assets\images\icon-arrow.svg" alt="" />
+          </div>
+          <div class="s"></div>
+        </div>
+
+        <div class="results">
+          <div id="result-year"><span class="result">--</span>years</div>
+          <div id="result-month"><span class="result">--</span>months</div>
+          <div id="result-day"><span class="result">--</span>days</div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+      let obj = document.querySelector("form");
+      console.log(obj.elements[1]);
+      /*let obj=document.getElementById('submit-button');
+    obj.addEventListener('click', calculate(this.form));*/
+      /*function calculate(form) {
+      let day = form.elements['day'].value;
+      let month = form.elements['month'].value;
+      let year = form.elements['year'].value;
+      let day_element = document.createElement('h1')
+      day_element.innerHTML='this is the new header';
+      let month_element = document.createTextNode(month)
+      let year_element = document.createTextNode(year)
+      document.getElementById('result-year').appendChild(day_element)
+      document.body.appendChild(day_element)
+      document.getElementById('result-year').appendChild(month_element)
+      document.getElementById('result-year').appendChild(year_element)*/
+      /*alert('you entered '+day+' days'); 
+      alert('you entered '+month+' months');
+      alert('you entered '+year+' years');
+    }*/
+    </script>
+  </body>
+</html>

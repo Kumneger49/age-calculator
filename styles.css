@@ -1,0 +1,163 @@
+body {
+    background-color: hsl(0, 1%, 44%);
+    color: hsl(0, 0%, 8%);
+  }
+
+
+
+  .main {
+    width: 40%;
+    height: 600px;
+    padding: 70px 30px;
+    background-color: white;
+    border-radius: 0 0 250px 0;
+    min-width: 367px;
+    position: relative;
+    margin-inline: auto;
+    margin-top: 100px;
+ 
+  }
+
+
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .age-container-all{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .age-container {
+    /* background-color: blue; */
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 750px; */
+    
+  }
+
+  .age-title {
+    top: -25px;
+    left: 0;
+    position: absolute;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: gray;
+  }
+
+  .age-box-input {
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border-width:.08rem;
+    border-color: grey;
+    padding: 7px 15px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+
+  .age-message {
+    top: 65px;
+    position: absolute;
+    font-family: sans-serif;
+    color: red;
+  }
+
+
+hr {
+  margin-block: 50px;
+  width: 90%;
+  margin-left: 0;
+}
+
+  #submit-button{
+    position: absolute;
+    right: 50px;
+    top: 105px;
+    margin-block: 30px;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    border-radius: 100%;
+    /* display: inline; */
+  }
+
+  #submit-button:hover {
+    background-color: black;
+  }
+
+  .results {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    min-width: 400px;
+  }
+
+  .result {
+    color: purple;
+    margin-right: 5px;
+    margin-right: 10px;
+
+
+  }
+
+  .border-color {
+    border-color: red;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .results {
+      font-size: 3rem;
+    }
+
+
+  }
+
+  @media screen and (max-width: 1170px) {
+
+    hr{
+      margin-top: 85px;
+    }
+
+    #submit-button{
+      transform: translate(-130px, 40px);
+    }
+
+  }
+
+  @media screen and (max-width: 1362px) {
+    .age-box-input {
+      width: 50px;
+    }
+
+    .age-container-all{
+      margin-inline: auto;
+    }
+  }
+
+ 
